@@ -15,7 +15,8 @@ import com.example.actmvvm.model.Mahasiswa
 
 @Composable
 fun TampilMahasiswaView(
-    mhs: Mahasiswa
+    mhs: Mahasiswa,
+    navController: NavHostController
 ){
     Column ( modifier = Modifier.fillMaxSize().padding(16.dp)){
         TampilData(
