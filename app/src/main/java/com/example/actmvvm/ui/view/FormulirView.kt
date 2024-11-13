@@ -30,11 +30,12 @@ fun FormulirView(
     onClickButton: (MutableList<String>) -> Unit)
 {
     var nama by remember { mutableStateOf("") }
+    var NIM by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var noHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenisK by remember { mutableStateOf("") }
-    var listData : MutableList<String> = mutableListOf(nama, jenisK, alamat)
+    var listData : MutableList<String> = mutableListOf(nama, NIM, jenisK, alamat, email, noHp)
     Column (modifier = modifier.fillMaxSize().padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally) {
         Text(text = "Biodata", fontWeight = FontWeight.Bold,
