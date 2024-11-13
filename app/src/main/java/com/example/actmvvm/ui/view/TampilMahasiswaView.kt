@@ -44,7 +44,8 @@ fun TampilMahasiswaView(
             judul = "No HP",
             isinya = mhs.noHp
         )
-        Button(onClick = { navController.popBackStack()}) { }
+        Button(onClick = { navController.popBackStack()},
+            modifier = Modifier.padding(16.dp)) {) { }
     }
     }
     @Composable
