@@ -70,6 +70,15 @@ fun FormulirView(
 
         }
         TextField(
+            value = alamat,
+            onValueChange = {alamat = it},
+            modifier = Modifier.fillMaxWidth().padding(5.dp),
+            label = { Text("Alamat") },
+            placeholder = {
+                Text("Masukkan Alamat Anda")
+            }
+        )
+        TextField(
             value = email,
             onValueChange = {email = it},
             modifier = Modifier.fillMaxWidth().padding(5.dp),
@@ -88,15 +97,6 @@ fun FormulirView(
                 Text("Masukkan No HP Anda")
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-        )
-        TextField(
-            value = alamat,
-            onValueChange = {alamat = it},
-            modifier = Modifier.fillMaxWidth().padding(5.dp),
-            label = { Text("Alamat") },
-            placeholder = {
-                Text("Masukkan Alamat Anda")
-            }
         )
         Button(
             onClick = {
